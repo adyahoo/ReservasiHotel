@@ -1,0 +1,45 @@
+.section-we-do .section-card--we-do:hover {
+  cursor: pointer;
+}
+.section-we-do .card-body {
+  background-color: #222222;
+}
+.section-we-do__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.section-we-do__description {
+  color: #928787;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-we-do__description {
+    font-size: 12px;
+  }
+}
+.section-we-do__lightcase {
+  color: #ffffff;
+}
+.section-we-do__lightcase:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.section-modal__modal-content {
+  color: #ffffff;
+  background-color: #222222;
+}
+.section-modal__content, .section-modal__content--description {
+  font-size: 12px;
+  color: #a97140;
+}
+.section-modal__content--description {
+  color: #928787;
+}
+
+/*# sourceMappingURL=service.css.map*/

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+.kamar-dropdown {
+  position: relative;
+}
+.kamar-dropdown::before {
+  position: absolute;
+  content: "▼";
+  bottom: 7px;
+  right: 16px;
+}
+
+/*# sourceMappingURL=reservasi.css.map*/

@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #5a57f8;
+}
+
+.card-bg {
+  min-height: 80vh;
+  padding: 24px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.custom-control-input:checked {
+  color: red;
+  background-color: red;
+  border-color: red;
+}
+
+.custom-button {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  width: 180px;
+  border-radius: 12px;
+  border-color: #5a57f8;
+  background-color: #5a57f8;
+}
+.custom-button:hover {
+  background-color: #221ed0;
+}
+
+/*# sourceMappingURL=layout.css.map*/
