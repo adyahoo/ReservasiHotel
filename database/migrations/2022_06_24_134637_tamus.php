@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('nama_grup')->nullable();
             $table->string('email')->nullable();
             $table->string('telepon')->nullable();
-            $table->integer('nik')->nullable();
+            $table->mediumInteger('nik')->nullable();
             $table->string('pekerjaan')->nullable();
             $table->string('negara')->nullable();
             $table->string('kota')->nullable();

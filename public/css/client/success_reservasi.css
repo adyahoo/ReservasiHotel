@@ -1,0 +1,38 @@
+.badge {
+  width: 180px;
+  height: 50px;
+  padding: 16px 0px;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.badge--validating {
+  background-color: #5a57f8;
+}
+.badge--rejected {
+  background-color: #e51010;
+}
+.badge--verified {
+  background-color: #2be01b;
+}
+
+.lottie {
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 991px) {
+  .lottie {
+    width: 150px;
+    height: 150px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=success_reservasi.css.map*/

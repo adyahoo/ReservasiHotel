@@ -7,13 +7,13 @@
     <title>@yield('title')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/fa/all.min.css" />
-    <link rel="stylesheet" href="css/client/layout.css" />
-    
+    <script src="{{asset('js/jquery.min.js')}}"></script>
+    <script src="{{asset('js/popper.min.js')}}"></script>
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/fa/all.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/client/layout.css')}}" />
+
     @stack('css')
 
 </head>

@@ -2,7 +2,7 @@
 @section('title', 'Reservasi')
 
 @push('css')
-<link rel="stylesheet" href="css/client/reservasi.css" />
+<link rel="stylesheet" href="{{asset('css/client/reservasi.css')}}" />
 @endpush
 
 @section('content')
@@ -12,22 +12,23 @@
         @csrf
         <div class="section-input text-left">
             <div class="row justify-content-between mb-3 px-5">
+                <input type="hidden" id="id_tamu" name="id_tamu" value="{{$id}}" />
                 <div class="col-12 col-lg-5">
                     <div class="form-group">
                         <label for="check_in">Check In Date</label>
-                        <input type="date" class="form-control" id="check_in" name="check_in" placeholder="ex: Doe">
+                        <input type="datetime-local" class="form-control" id="check_in" name="check_in" placeholder="ex: Doe">
                     </div>
                 </div>
                 <div class="col-12 col-lg-5">
                     <div class="form-group">
                         <label for="check_out">Check Out Date</label>
-                        <input type="date" class="form-control" id="check_out" name="check_out" placeholder="ex: Doe">
+                        <input type="datetime-local" class="form-control" id="check_out" name="check_out" placeholder="ex: Doe">
                     </div>
                 </div>
                 <div class="col-12 col-lg-5" id="groupContainer">
                     <div class="form-group">
                         <label for="id_kamar">Room Type</label>
-                        <select class="form-control" id="id_kamar" name="id_kamar" onchange="kamar()">
+                        <select class="form-control" id="id_kamar" name="id_kamar">
                             @foreach($jenisKamars as $jenisKamar)
                             <option value="{{$jenisKamar->id}}">{{$jenisKamar->nama}}</option>
                             @endforeach
@@ -48,8 +49,8 @@
                 </div>
                 <div class="col-12 col-lg-5">
                     <div class="form-group">
-                        <label for="identity">KTP/SIM</label>
-                        <input type="file" class="form-control" id="identity" name="identity" placeholder="ex: Indonesia">
+                        <label for="userIdentity">KTP/SIM</label>
+                        <input type="file" accept="image/*" class="form-control-file" id="userIdentity" name="userIdentity">
                     </div>
                 </div>
                 <div class="col-12">
@@ -66,9 +67,4 @@
 @endsection
 
 @push('js')
-<script>
-    $(document).ready(() => {
-        $('#kamar').val('qwsaf')
-    })
-</script>
 @endpush

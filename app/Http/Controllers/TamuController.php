@@ -32,8 +32,8 @@ class TamuController extends Controller
             'is_group' => $isGroup,
         ]);
 
-        Tamu::create($request->all());
+        $tamu = Tamu::create($request->all());
 
-        return redirect()->route('tamu');
+        return redirect()->route('reservasi', $tamu->id);
     }
 }

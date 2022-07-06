@@ -20,6 +20,8 @@ mix.js('resources/js/app.js', 'public/js')
 
 mix.sass('resources/scss/client/layout.scss', 'public/css/client')
     .sass('resources/scss/client/reservasi.scss', 'public/css/client')
+    .sass('resources/scss/client/assessment.scss', 'public/css/client')
+    .sass('resources/scss/client/success_reservasi.scss', 'public/css/client')
     .sourceMaps(true, 'source-map');
 
 mix.version();

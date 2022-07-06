@@ -19702,6 +19702,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/scss/client/assessment.scss":
+/*!***********************************************!*\
+  !*** ./resources/scss/client/assessment.scss ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/scss/client/success_reservasi.scss":
+/*!******************************************************!*\
+  !*** ./resources/scss/client/success_reservasi.scss ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/css/app.css":
 /*!*******************************!*\
   !*** ./resources/css/app.css ***!
@@ -50491,7 +50517,7 @@ if (false) {} else {
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, ["css/app","css/client/reservasi","css/client/layout","/js/vendor"], () => (__webpack_exec__("./resources/js/app.js"), __webpack_exec__("./resources/scss/client/layout.scss"), __webpack_exec__("./resources/scss/client/reservasi.scss"), __webpack_exec__("./resources/css/app.css")));
+/******/ __webpack_require__.O(0, ["css/app","css/client/success_reservasi","css/client/assessment","css/client/reservasi","css/client/layout","/js/vendor"], () => (__webpack_exec__("./resources/js/app.js"), __webpack_exec__("./resources/scss/client/layout.scss"), __webpack_exec__("./resources/scss/client/reservasi.scss"), __webpack_exec__("./resources/scss/client/assessment.scss"), __webpack_exec__("./resources/scss/client/success_reservasi.scss"), __webpack_exec__("./resources/css/app.css")));
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);

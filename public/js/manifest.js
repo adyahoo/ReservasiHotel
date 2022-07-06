@@ -136,6 +136,8 @@
 /******/ 		var installedChunks = {
 /******/ 			"/js/manifest": 0,
 /******/ 			"css/app": 0,
+/******/ 			"css/client/success_reservasi": 0,
+/******/ 			"css/client/assessment": 0,
 /******/ 			"css/client/reservasi": 0,
 /******/ 			"css/client/layout": 0
 /******/ 		};

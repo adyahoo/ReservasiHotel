@@ -1,0 +1,42 @@
+@use '../config/_config' as *;
+@use "sass:map";
+
+.badge {
+  width: 180px;
+  height: 50px;
+  padding: 16px 0px;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+
+  &--validating {
+    background-color: map.get($color, 'primary');
+  }
+  &--rejected {
+    background-color: map.get($color, 'danger');
+  }
+  &--verified {
+    background-color: map.get($color, 'success');
+  }
+}
+
+.lottie {
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 991px) {
+  .lottie {
+    width: 150px;
+    height: 150px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+}

@@ -18,12 +18,12 @@ return new class extends Migration
             $table->integer('id_tamu')->unsigned();
             $table->integer('id_kamar')->unsigned();
             $table->integer('id_assessment')->unsigned()->nullable();
-            $table->date('check_in');
-            $table->date('check_out');
+            $table->dateTime('check_in');
+            $table->dateTime('check_out');
             $table->integer('total_hari_stay');
             $table->integer('total_dewasa');
             $table->integer('total_anak');
-            $table->string('identity');
+            $table->string('identity')->nullable();
             $table->longText('note')->nullable();
             $table->longText('note_validasi')->nullable();
             $table->enum('status', ['validating', 'rejected', 'verified']);
