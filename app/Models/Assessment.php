@@ -9,6 +9,8 @@ class Assessment extends Model
 {
     use HasFactory;
 
+    protected $table = 'assessments';
+
     protected $fillable = [
         'assessment_1',
         'assessment_2',
@@ -18,4 +20,9 @@ class Assessment extends Model
         'assessment_6',
         'total',
     ];
+
+    public function reservasi()
+    {
+        $this->hasMany(Reservasi::class);
+    }
 }

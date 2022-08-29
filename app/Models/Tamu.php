@@ -23,4 +23,9 @@ class Tamu extends Model
         'kode_pos',
         'is_group'
     ];
+
+    public function reservasi()
+    {
+        $this->hasMany(Reservasi::class);
+    }
 }

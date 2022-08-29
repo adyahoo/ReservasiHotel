@@ -27,7 +27,7 @@
         </div>
     </div>
     @if($reservasi->status == 'rejected')
-    <button class="btn btn-primary custom-button float-right align-self-end">Edit Data</button>
+    <a href="{{route('editDataDiri', $reservasi->id)}}" class="btn btn-primary custom-button float-right align-self-end">Edit Data</a>
     @endif
 </div>
 @endsection

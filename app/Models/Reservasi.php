@@ -23,4 +23,19 @@ class Reservasi extends Model
         'note_validasi',
         'status',
     ];
+
+    public function tamu()
+    {
+        return $this->belongsTo(Tamu::class, 'id_tamu', 'id');
+    }
+
+    public function jenisKamar()
+    {
+        return $this->belongsTo(JenisKamar::class, 'id_kamar', 'id');
+    }
+
+    public function assessment()
+    {
+        return $this->belongsTo(Assessment::class, 'id_assessment', 'id');
+    }
 }
