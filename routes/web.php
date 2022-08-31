@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AssessmentController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\JenisKamarController;
 use App\Http\Controllers\KamarController;
 use App\Http\Controllers\ReservasiController;
@@ -19,6 +20,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth']);
+
 //route for guest store data
 Route::get('/', [TamuController::class, 'createTamu'])->name('client_tamu');
 Route::post('/tamu/store', [TamuController::class, 'storeTamu'])->name('storeTamu');
@@ -35,6 +40,9 @@ Route::get('/reservasi/edit/{idTamu}/{idReservasi}', [ReservasiController::class
 Route::post('/reservasi/update/{idTamu}/{idReservasi}', [ReservasiController::class, 'updateReservasi'])->name('updateReservasi');
 Route::get('/assessment/edit/{id_tamu}/{id_reservasi}', [AssessmentController::class, 'editAssessment'])->name('editAssessment');
 Route::post('/assessment/update/{idAssessment}', [AssessmentController::class, 'updateAssessment'])->name('updateAssessment');
+
+//route for auth
+Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');
 
 //route for admin
 Route::group(['prefix' => 'admin'], function () {

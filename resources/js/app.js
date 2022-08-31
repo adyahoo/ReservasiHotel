@@ -1,8 +1,7 @@
 import './bootstrap';
 
-import './screens/DataDiriScreen';
-import './components/Card';
-import './components/RadioButton';
+import Alpine from 'alpinejs';
 
-import './values/Colors';
-import './values/Style';
+window.Alpine = Alpine;
+
+Alpine.start();
