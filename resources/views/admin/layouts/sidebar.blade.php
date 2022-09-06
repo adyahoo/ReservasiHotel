@@ -18,7 +18,7 @@
             </li>
             <li>
                 <a href="{{route('tamu')}}" class="nav-link"><i class="fas fa-columns"></i>
-                    <span>Master Tamu</span></a>
+                    <span>Data Tamu</span></a>
             </li>
             <li>
                 <a href="{{route('kamar')}}" class="nav-link"><i class="fas fa-columns"></i>

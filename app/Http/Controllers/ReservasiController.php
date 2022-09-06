@@ -28,7 +28,7 @@ class ReservasiController extends Controller
         $totalDays = (int)(($checkOutDate - $checkInDate) / 86400);
 
         $request->merge([
-            'total_hari_stay' => $totalDays,
+            'total_hari_stay' => $totalDays == 0 ? 1 : $totalDays,
             'status' => 'validating',
             'identity' => $filename,
         ]);
@@ -71,7 +71,7 @@ class ReservasiController extends Controller
         $reservasi->id_kamar = $request->id_kamar;
         $reservasi->check_in = $request->check_in;
         $reservasi->check_out = $request->check_out;
-        $reservasi->total_hari_stay = $totalDays;
+        $reservasi->total_hari_stay = $totalDays == 0 ? 1 : $totalDays;
         $reservasi->total_dewasa = $request->total_dewasa;
         $reservasi->total_anak = $request->total_anak;
         $reservasi->identity = $request->identity;

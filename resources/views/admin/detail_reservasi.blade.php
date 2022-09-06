@@ -96,6 +96,17 @@
                                         <div class="form-group">
                                             <label for="assessment">Total Poin COVID-19 Self Assessment</label>
                                             <input type="text" class="form-control" id="assessment" name="assessment" value="{{$reservasi->assessment->total}}" placeholder="ex: John Doe Squad" disabled>
+                                            <div class="row no-gutters mt-1">
+                                                <p class="mb-0 mr-3 text-small">
+                                                    0 = Risiko Kecil
+                                                </p>
+                                                <p class="mb-0 mr-3 text-small">
+                                                    1 - 4 = Risiko Sedang
+                                                </p>
+                                                <p class="mb-0 mr-3 text-small">
+                                                    > 5 = Risiko Besar
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-12" id="groupContainer">
